@@ -1,0 +1,32 @@
+<form (ngSubmit)="handleSubmitEvent($event)">
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input class="form-control" name="nombre" [(ngModel)]="provincia.nombre"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Capital</label>
+    <input class="form-control" name="modelo" [(ngModel)]="provincia.capital"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Poblacion</label>
+    <input class="form-control" name="marca" [(ngModel)]="provincia.poblacion"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Superficie</label>
+    <input class="form-control" name="descripcion" [(ngModel)]="provincia.superfcie"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Numero Departamentos</label>
+    <input class="form-control" name="precio" [(ngModel)]="provincia.nroDepartamentos"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">abreviatura</label>
+    <input class="form-control" name="costoenvio" [(ngModel)]="provincia.abreviatura"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Bandera</label>
+    <input class="form-control" name="cantiadvendida" [(ngModel)]="provincia.badera"/>
+  </div>
+  <button class="btn m-2 btn-primary"  type="submit">Enviar</button>
+</form>
+<button class="btn m-2 btn-secondary">Volver</button>

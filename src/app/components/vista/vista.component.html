@@ -1,0 +1,14 @@
+<div>
+  <div>
+    <form (ngSubmit)="handleSubmitEvent($event)">
+      <div class="">
+        <input type="text" name="search" class="form-control" [(ngModel)]="inNombre"/>
+        <button class="btn">Search</button>
+      </div>
+    </form>
+  </div>
+  <div><button (click)="handleAgregarEvent($event)" >Agregar</button></div>
+  <div>
+    <app-table-provincia></app-table-provincia>
+  </div>
+</div>

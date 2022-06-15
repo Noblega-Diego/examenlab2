@@ -1,0 +1,19 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Provincia</th>
+      <th>Abreviatura</th>
+      <th>bandera</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let provincia of provincias">
+    <td>{{provincia.nombre}}</td>
+    <td>{{provincia.abreviatura}}</td>
+    <td><img [src]="provincia.badera" alt=""></td>
+    <td><button class="btn" (click)="handleDetalleClick($event,provincia.id!)"  >Detalle</button><button class="btn" (click)="handleModificarClick($event,provincia.id!)" >Modificar</button></td>
+  </tr>
+  </tbody>
+</table>
